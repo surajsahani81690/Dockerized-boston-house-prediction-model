@@ -1,3 +1,11 @@
+# Code for the Docker file
+# for building the docker image in your docker run in terminal : docker build -t your_user_name/image_name .,eg:"suraj5178/api ."
+# Then run docker login with username and pass
+# Then run docker push suraj5178/api , it creates the image on your docker hub
+# To run the iamge in your Docker container docker run -d -p 8000:8000 suraj5178/api
+
+
+
 FROM python:3.11-slim
 
 WORKDIR /app
