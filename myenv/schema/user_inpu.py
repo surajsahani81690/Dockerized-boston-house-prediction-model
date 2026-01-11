@@ -1,6 +1,5 @@
 from pydantic import BaseModel, Field
 from typing import Annotated
-
 class UserInput(BaseModel):
     CRIM: Annotated[float, Field(..., description="Crime rate per capita by town", example=[0.0063, 0.005])]
     ZN: Annotated[float, Field(..., description="Proportion of residential land zoned for lots over 25,000 sq.ft.", example=[18.0, 90.0, 100.0])]
