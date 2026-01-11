@@ -1,3 +1,5 @@
+# FastAPI application for house price prediction
+
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from schema.user_inpu import UserInput
